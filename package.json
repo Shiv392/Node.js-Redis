@@ -4,16 +4,18 @@
   "description": "📘 Redis Learning Repository",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "shiv soni",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "redis": "^5.10.0"
   },
   "devDependencies": {
-    "dotenv": "^17.2.3"
+    "nodemon": "^3.1.11"
   }
 }

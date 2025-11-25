@@ -72,11 +72,11 @@ By completing this project, you will master:
 
 🚩 Redis Data Types
 
-Strings
-
+Strings --> we can store name, phone number, text and more 
+ 
 Hashes
 
-Lists
+Lists --> list is like a collection or array of the string where we can push item from both end also can get those. 
 
 Sets
 
