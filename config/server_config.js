@@ -26,6 +26,20 @@ right_pop();
 list_length();
 list_itemby_index();
 
+//set function
+const add_set = require('../basic_functions/sets/add_set');
+const get_all_setitems = require('../basic_functions/sets/get_all_set');
+const set_len = require('../basic_functions/sets/set_len');
+const data_exits = require('../basic_functions/sets/data_exits');
+const remove_set = require('../basic_functions/sets/remove_set');
+const union_set = require('../basic_functions/sets/set_union');
+add_set();
+get_all_setitems();
+set_len();
+data_exits();
+remove_set();
+union_set();
+
 app.use(express.json());
 app.use(cors());
 
