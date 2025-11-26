@@ -40,6 +40,21 @@ data_exits();
 remove_set();
 union_set();
 
+//sorted set function
+const add_sorted_set = require('../basic_functions/sorted_sets/add_sorted_set');
+const {get_score_sorted_set, get_sorted_set} = require('../basic_functions/sorted_sets/get_sorted_set');
+const get_member_score = require('../basic_functions/sorted_sets/get_score');
+const remove_sorted_set = require('../basic_functions/sorted_sets/remove_sorted_set');
+const increment_score = require('../basic_functions/sorted_sets/increment_score');
+const get_player_rank = require('../basic_functions/sorted_sets/get_rank');
+add_sorted_set();
+get_sorted_set();
+get_score_sorted_set();
+get_member_score();
+remove_sorted_set();
+increment_score();
+get_player_rank();
+
 app.use(express.json());
 app.use(cors());
 
