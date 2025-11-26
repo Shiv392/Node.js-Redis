@@ -55,6 +55,23 @@ remove_sorted_set();
 increment_score();
 get_player_rank();
 
+//hash set function 
+const hash_set = require('../basic_functions/hash_sets/hash_set');
+const {hash_get, hash_get_all} = require('../basic_functions/hash_sets/hash_get');
+const hash_len = require('../basic_functions/hash_sets/hash_len');
+const check_exits = require('../basic_functions/hash_sets/hash_exits');
+const get_hashkeys = require('../basic_functions/hash_sets/hash_keys');
+const get_hash_value = require('../basic_functions/hash_sets/has_value');
+const hash_increment_by = require('../basic_functions/hash_sets/hincr_by');
+hash_set();
+hash_get();
+hash_get_all();
+hash_len();
+check_exits();
+get_hashkeys();
+get_hash_value();
+hash_increment_by();
+
 app.use(express.json());
 app.use(cors());
 
