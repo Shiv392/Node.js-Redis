@@ -72,6 +72,12 @@ get_hashkeys();
 get_hash_value();
 hash_increment_by();
 
+//pub-sub fuctions
+const redis_publisher = require('../redis_pubsub/redis_publisher');
+const redis_subscribe = require('../redis_pubsub/redis_subscriber');
+redis_publisher();
+redis_subscribe();
+
 app.use(express.json());
 app.use(cors());
 
