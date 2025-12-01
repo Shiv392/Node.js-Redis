@@ -86,6 +86,10 @@ stream_producer();
 consumer_group();
 stream_consumer();
 
+//redis setex function
+const redis_setex = require('../redis_ttl/redis_setex');
+redis_setex();
+
 app.use(express.json());
 app.use(cors());
 
