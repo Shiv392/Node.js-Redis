@@ -78,6 +78,14 @@ const redis_subscribe = require('../redis_pubsub/redis_subscriber');
 redis_publisher();
 redis_subscribe();
 
+//redis stream function 
+const stream_consumer = require('../redis_streams/stream_consumer');
+const stream_producer = require('../redis_streams/stream_producer');
+const consumer_group = require('../redis_streams/consumer_group');
+stream_producer();
+consumer_group();
+stream_consumer();
+
 app.use(express.json());
 app.use(cors());
 
